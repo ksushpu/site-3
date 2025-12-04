@@ -4,4 +4,4 @@
 Этот репозиторий является каркасом для будущего веб-приложения.
 
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://ksushpu.github.io/site/)
+- [Публичная страница на GitHub Pages](https://ksushpu.github.io/site-3/)
