@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Гриневич Ксения - Контакты</title>
+    <link rel="icon" href="../assets/favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/contacts.css">
+</head>
+
+<body class="light-theme">
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <div class="page-container">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <img src="../assets/favicon1.ico" 
+                         srcset="../assets/favicon1.ico 1x, ../assets/favicon1.ico 2x" 
+                         alt="Логотип" 
+                         class="header-logo retina-image">
+                    <h1 class="header-title">Гриневич Ксения</h1>
+                    <button class="theme-toggle" id="themeToggle">
+                        <span class="theme-icon">🔆</span>
+                        <span class="theme-text">Яркость</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="diary.html" class="nav-link">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link active">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main" class="main-content">
+            <div class="container">
+                <div class="contacts-layout">
+                    <section class="contact-form-section">
+                        <h2 class="section-title">Свяжитесь со мной</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="contactName" class="form-label">Имя</label>
+                                <input type="text" id="contactName" class="form-input" placeholder="Введите ваше имя" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" id="contactEmail" class="form-input" placeholder="Введите ваш email" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactMessage" class="form-label">Сообщение</label>
+                                <textarea id="contactMessage" class="form-textarea" placeholder="Введите ваше сообщение" rows="5" required></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <button type="submit" class="download-btn contact-submit">Отправить сообщение</button>
+                        </form>
+                    </section>
+
+                    <section class="contact-info-section">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email:</span>
+                                    <span class="contact-text">kseniya.grin.99@gmail.com</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">💻</div>
+                                <div class="contact-details">
+                                    <span class="contact-label">GitHub:</span>
+                                    <a href="https://github.com/ksushpu" target="_blank" class="contact-link">ksushpu</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Местоположение:</span>
+                                    <span class="contact-text">Москва, Россия</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>🌟 &copy; 2025 Гриневич Ксения | E-mail: kseniya.grin.99@gmail.com | Телефон: +7(937)601-22-22</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/contacts.js"></script>
+</body>
+</html>

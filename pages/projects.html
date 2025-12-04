@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Гриневич Ксения - Проекты</title>
+    <link rel="icon" href="../assets/favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body class="light-theme">
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <div class="page-container">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <img src="../assets/favicon1.ico" 
+                         srcset="../assets/favicon1.ico 1x, ../assets/favicon1.ico 2x" 
+                         alt="Логотип" 
+                         class="header-logo retina-image">
+                    <h1 class="header-title">Гриневич Ксения</h1>
+                    <button class="theme-toggle" id="themeToggle">
+                        <span class="theme-icon">🔆</span>
+                        <span class="theme-text">Яркость</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation" aria-label="Основная навигация">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link active">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="diary.html" class="nav-link">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main" class="main-content">
+            <div class="container">
+                <section class="projects-filter">
+                    <h2 class="section-title">Мои проекты</h2>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Все</button>
+                        <button class="filter-btn" data-filter="html">HTML</button>
+                        <button class="filter-btn" data-filter="с++">C++</button>
+                    </div>
+                </section>
+
+                <section class="projects-section">
+                    <div class="projects-grid">
+                        <div class="project-card" data-category="html">
+                            <div class="project-image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="../images/project1.png">
+                                    <source media="(min-width: 768px)" srcset="../images/project1.png">
+                                    <img src="../images/project1.png" alt="Личный сайт" class="responsive-image" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Личный сайт</h3>
+                                <p class="project-description">
+                                    Сайт-портфолио на HTML, CSS и с адаптивным дизайном.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                </div>
+                                <button class="project-btn" data-file="../assets/project1.zip">Посмотреть</button>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="с++">
+                             <div class="project-image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="../images/project2.png">
+                                    <source media="(min-width: 768px)" srcset="../images/project2.png">
+                                    <img src="../images/project2.png" alt="Qt-приложение" class="responsive-image" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Qt-приложение</h3>
+                                <p class="project-description">
+                                    Приложение для управления покупками и растратами на C++ с использованием фреймворка
+                                    Qt.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">C++</span>
+                                </div>
+                                <button class="project-btn" data-file="../assets/project2.pdf">Посмотреть</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>🌟 &copy; 2025 Гриневич Ксения | E-mail: kseniya.grin.99@gmail.com | Телефон: +7(937)601-22-22</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/projects.js"></script>
+</body>
+
+</html>

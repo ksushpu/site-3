@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Гриневич Ксения - Портфолио</title>
+    <link rel="icon" href="assets/favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body class="light-theme">
+    <div class="page-container">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class = "header-name">
+                        <img src="assets/favicon1.ico" 
+                            srcset="assets/favicon1.ico 1x, assets/favicon1.ico 2x" 
+                            alt="Логотип" 
+                            class="header-logo retina-image">
+                        <h1 class="header-title">Гриневич Ксения</h1>
+                    </div>
+                    <button class="theme-toggle" id="themeToggle">
+                        <span class="theme-icon">🔆</span>
+                        <span class="theme-text">Яркость</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation" aria-label="Основная навигация">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/projects.html" class="nav-link">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/diary.html" class="nav-link">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main" class="main-content">
+            <div class="container">
+                <section class="profile-section">
+                    <div class="profile-card">
+                        <div class="profile-image-container">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="images/photo.png">
+                                <img src="images/photo.png" 
+                                     srcset="images/photo.png 1x, images/photo.png 2x" 
+                                     alt="Фото Гриневич Ксения" 
+                                     class="profile-image responsive-image">
+                            </picture>
+                        </div>
+                        <div class="profile-info">
+                            <h2 class="profile-name">Гриневич Ксения Владимировна</h2>
+                            <p class="profile-subtitle">Студентка факультета ИПТИП, группа ЭФБО-03-24</p>
+                            
+                            <div class="about-section">
+                                <h3 class="section-title">Обо мне</h3>
+                                <p class="about-text">
+                                    Привет! Я студентка факультета ИПТИП, группа ЭФБО-03-24.<br>
+                                    Увлекаюсь веб-разработкой и созданием современных интерфейсов.
+                                </p>
+                            </div>
+                            
+                            <a href="assets/resume.docx" class="download-btn">↓ Скачать резюме</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills-section">
+                    <h2 class="section-title">Мои навыки</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percent">25%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress html-css-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">10%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress js-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-percent">30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress c-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress python-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="projects-section">
+                    <h2 class="section-title">Мои проекты</h2>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="images/project1.png">
+                                    <source media="(min-width: 768px)" srcset="images/project1.png">
+                                    <img src="images/project1.png" alt="Личный сайт" class="responsive-image" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Личный сайт</h3>
+                                <p class="project-description">
+                                    Сайт-портфолио на HTML, CSS и с адаптивным дизайном.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <div class="project-image">
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="images/project2.png">
+                                    <source media="(min-width: 768px)" srcset="images/project2.png">
+                                    <img src="images/project2.png" alt="Qt-приложение" class="responsive-image" loading="lazy">
+                                </picture>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Qt-приложение</h3>
+                                <p class="project-description">
+                                    Приложение для управления покупками и растратами на C++ с использованием фреймворка Qt.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="tag">C++</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>🌟 &copy; 2025 Гриневич Ксения | E-mail: kseniya.grin.99@gmail.com | Телефон: +7(937)601-22-22</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

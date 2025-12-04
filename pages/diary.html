@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Гриневич Ксения - Дневник</title>
+    <link rel="icon" href="../assets/favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/diary.css">
+</head>
+
+<body class="light-theme">
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
+    <div class="page-container">
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <img src="../assets/favicon1.ico" 
+                         srcset="../assets/favicon1.ico 1x, ../assets/favicon1.ico 2x" 
+                         alt="Логотип" 
+                         class="header-logo retina-image">
+                    <h1 class="header-title">Гриневич Ксения</h1>
+                    <button class="theme-toggle" id="themeToggle">
+                        <span class="theme-icon">🔆</span>
+                        <span class="theme-text">Яркость</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navigation">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Проекты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="diary.html" class="nav-link active">Дневник</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacts.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main id="main" class="main-content">
+            <div class="container">
+                <section class="skills-section">
+                    <h2 class="section-title">Мой учебный прогресс</h2>
+                    <div class="skills-grid" id="progressList">
+                        <!-- Записи будут загружаться из JavaScript -->
+                    </div>
+                </section>
+
+                <section class="skills-section">
+                    <h2 class="section-title">Текущие курсы</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percent">25%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress html-css-progress" style="width: 25%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">10%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress js-progress" style="width: 10%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-percent">30%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress c-progress" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress python-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills-section" id="addRecordForm" style="display: none;">
+                    <h2 class="section-title">Добавить новую запись</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <form id="recordForm" class="record-form">
+                                <div class="form-group">
+                                    <label for="recordDate" class="form-label">Дата</label>
+                                    <input type="date" id="recordDate" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recordTitle" class="form-label">Название записи</label>
+                                    <input type="text" id="recordTitle" class="form-input" placeholder="Введите название" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recordStatus" class="form-label">Статус</label>
+                                    <select id="recordStatus" class="form-input" required>
+                                        <option value="Выполнено">✅ Выполнено</option>
+                                        <option value="В процессе">⏳ В процессе</option>
+                                    </select>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="submit" class="download-btn">Добавить запись</button>
+                                    <button type="button" class="cancel-btn" id="cancelBtn">Отмена</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="progress-section" id="addRecordSection">
+                    <div class="progress-info">
+                        <button class="download-btn" id="addRecordBtn">Добавить запись</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <p>🌟 &copy; 2025 Гриневич Ксения | E-mail: kseniya.grin.99@gmail.com | Телефон: +7(937)601-22-22</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/diary.js"></script>
+</body>
+</html>
