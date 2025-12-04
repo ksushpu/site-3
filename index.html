@@ -17,14 +17,15 @@
             <div class="container">
                 <div class="header-content">
                     <div class = "header-name">
-                        <img src="assets/favicon1.ico" 
-                            srcset="assets/favicon1.ico 1x, assets/favicon1.ico 2x" 
-                            alt="Логотип" 
-                            class="header-logo retina-image"
-                            width="32"
-                            height="32"
-                            loading="lazy"
-                            decoding="async">
+                        <picture>
+                            <source srcset="assets/favicon1.ico" type="image/x-icon">
+                            <img src="assets/favicon1.ico" 
+                                alt="Логотип" 
+                                class="header-logo retina-image"
+                                width="32"
+                                height="32"
+                                loading="eager">
+                        </picture>
                         <h1 class="header-title">Гриневич Ксения</h1>
                     </div>
                     <button class="theme-toggle" id="themeToggle">
@@ -60,11 +61,12 @@
                     <div class="profile-card">
                         <div class="profile-image-container">
                             <picture>
-                                <source media="(min-width: 768px)" srcset="images/photo.png">
+                                <source srcset="images/photo.webp" type="image/webp">
+                                <source srcset="images/photo.png" type="image/png">
                                 <img src="images/photo.png" 
-                                     srcset="images/photo.png 1x, images/photo.png 2x" 
                                      alt="Фото Гриневич Ксения" 
                                      class="profile-image responsive-image"
+                                     loading="eager"
                                      width="300"
                                      height="300">
                             </picture>
@@ -134,15 +136,43 @@
                         <div class="project-card">
                             <div class="project-image">
                                 <picture>
-                                    <source media="(min-width: 1200px)" srcset="images/project1.png">
-                                    <source media="(min-width: 768px)" srcset="images/project1.png">
-                                    <img src="images/project1.png" 
-                                         alt="Личный сайт" 
-                                         class="responsive-image" 
-                                         loading="lazy"
-                                         decoding="async"
-                                         width="600"
-                                         height="400">
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="images/project1.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="images/project1.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="images/project1.png"
+                                        type="image/png"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="images/project1.png"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="images/project1.png"
+                                        srcset="
+                                            images/project1.webp 640w,
+                                            images/project1.webp 960w,
+                                            images/project1.webp 1280w,
+                                            images/project1.png 640w,
+                                            images/project1.png 960w,
+                                            images/project1.png 1280w
+                                        "
+                                        sizes="(max-width: 700px) 92vw, (max-width: 1200px) 640px, 960px"
+                                        alt="Личный сайт"
+                                        loading="lazy"
+                                        class="responsive-image"
+                                        width="600"
+                                        height="400"
+                                    />
                                 </picture>
                             </div>
                             <div class="project-content">
@@ -161,15 +191,43 @@
                         <div class="project-card">
                             <div class="project-image">
                                 <picture>
-                                    <source media="(min-width: 1200px)" srcset="images/project2.png">
-                                    <source media="(min-width: 768px)" srcset="images/project2.png">
-                                    <img src="images/project2.png" 
-                                         alt="Qt-приложение" 
-                                         class="responsive-image" 
-                                         loading="lazy"
-                                         decoding="async"
-                                         width="600"
-                                         height="400">
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="images/project2.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="images/project2.webp"
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="images/project2.png"
+                                        type="image/png"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="images/project2.png"
+                                        type="image/png"
+                                    />
+                                    <img
+                                        src="images/project2.png"
+                                        srcset="
+                                            images/project2.webp 640w,
+                                            images/project2.webp 960w,
+                                            images/project2.webp 1280w,
+                                            images/project2.png 640w,
+                                            images/project2.png 960w,
+                                            images/project2.png 1280w
+                                        "
+                                        sizes="(max-width: 700px) 92vw, (max-width: 1200px) 640px, 960px"
+                                        alt="Qt-приложение"
+                                        loading="lazy"
+                                        class="responsive-image"
+                                        width="600"
+                                        height="400"
+                                    />
                                 </picture>
                             </div>
                             <div class="project-content">
